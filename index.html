@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Bootstrap import -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css">
+    <script>
+    
+    function turnRed(col){
+        var space = document.getElementsByClassName("f-policy")[col];
+        if (space.style.backgroundColor != "red"){
+            space.style.backgroundColor = "red";   
+        }
+        else{
+            space.style.backgroundColor = ""
+        }
+        
+    }
+    
+    function turnBlue(col){
+        var space = document.getElementsByClassName("l-policy")[col];
+        if (space.style.backgroundColor != "blue"){
+            space.style.backgroundColor ="blue";   
+        }
+        else{
+            space.style.backgroundColor = "";
+        }
+        
+    }
+    </script>
+    <title>Secret Hitler</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="row policy">
+            <div class="col-4">
+                <h1>Secret Hitler</h1>
+            </div>
+            
+        </div>
+   
+        <div class="row policy">
+            <div class="col f-policy" onclick="turnRed(0)">
+        
+            </div>
+            <div class="col f-policy" onclick="turnRed(1)">
+        
+            </div>
+            <div class="col f-policy" onclick="turnRed(2)">
+                <img src="magnifier.png" class="card-image">
+                <p>PRESIDENT EXAMINES TOP 3 CARDS</p>
+            </div>
+            <div class="col f-policy" onclick="turnRed(3)">
+                
+                <img src="bullet.png" class="card-image">
+                <p>PRESIDENT MUST KILL ONE PLAYER</p>
+                
+            </div>
+            <div class="col f-policy" onclick="turnRed(4)">
+                <img src="bullet.png" class="card-image" >
+                <p>PRESIDENT MUST KILL ONE PLAYER</p>
+                
+            </div>
+            <div class="col f-policy" onclick="turnRed(5)" style = "border-right-width: 0px">
+                <img src="skull.png" class="card-image">
+
+            </div>
+        </div>
+        <div class="row policy">
+            <div class="col l-policy" onclick="turnBlue(0)">
+        
+            </div>
+            <div class="col l-policy" onclick="turnBlue(1)">
+        
+            </div>
+            <div class="col l-policy" onclick="turnBlue(2)">
+        
+            </div>
+            <div class="col l-policy" onclick="turnBlue(3)">
+                
+            </div>
+            <div class="col l-policy" onclick="turnBlue(4)" style = "border-right-width: 0px">
+                <img src="dove.png" class = "card-image">
+            </div>
+        </div>
+    </div>
+
+</body>

@@ -1,0 +1,45 @@
+p{
+    max-height: 25%;
+    font-size: small;
+    text-align:center;
+}
+
+.container{
+    max-height: 100rem;
+}
+.row{
+    margin:1rem;
+}
+
+.f-policy{
+    background-color: lightcoral;   
+    min-height: 12rem;
+    border-right: 3px solid black;
+    display:flex;
+    align-items:flex-end;
+    flex-direction: column;
+}
+
+.f-policy:hover{
+    background-color: #fe0000;
+}
+
+.l-policy{
+    background-color: lightskyblue;
+    min-height: 12rem;
+    border-right: 3px solid black;
+    display:flex;
+    align-items: flex-end;  
+    flex-direction: column;
+}
+
+.l-policy:hover{
+    background-color: blue;
+}
+
+.card-image{
+    margin: auto auto auto auto;
+    max-width: 50%;
+    max-height: 50%;
+}
+
